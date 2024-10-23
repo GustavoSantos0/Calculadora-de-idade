@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  
+  <title> Age calculator app</title>
+
+  
+</head>
+<body>
+    <div class="container">
+        
+        <div class="input">
+            
+            <div class="entrada">
+                <label for="dia">Days</label>
+                <input type="number" id="dia" class="data" placeholder="DD">
+                <div class="erro" id="error"></div>
+            </div>
+            <div class="entrada">
+                <label for="mes">Month</label>
+                <input type="number" id="mes" class="data" placeholder="MM">
+                <div class="erro" id="error2"></div>
+            </div>
+            <div class="entrada">
+                <label for="ano">Years</label>
+                <input type="number" id="ano" class="data" placeholder="YYYY">
+                <div class="erro" id="error3"></div>
+            </div>
+            
+            
+        </div>
+            <div class="resultados">
+        
+            <button class="botao" id="botao"><img src="assets/images/Wfit__Picto_Fleche_Blanc_Scroll.webp" alt=""></button>
+           
+            <p class="resultado"><span id="resultado_ano"></span> Years</p>
+            <p class="resultado"><span id="resultado_mes"></span> Months</p>
+            <p class="resultado"><span id="resultado_dia"></span> Days</p>
+
+            </div>
+        
+    </div>
+ 
+    <script src="script.js"></script>
+
+  
+</body>
+</html>

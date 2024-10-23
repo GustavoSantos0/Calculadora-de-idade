@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root{
+    
+    --fonte_letra: "Poppins";
+    --cor_botao: hsl(259, 100%, 63%);
+}
+
+
+
+
+body{
+    background-color: hsl(0, 0%, 86%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    font-family: var(--fonte_letra);
+}
+
+.container{
+    background-color:white ;
+    display: flex;
+    flex-direction: column;
+    width:42em ;
+    height:42em ;
+    border-radius: 2em 2em 10em;
+}
+.input{
+    display: flex; 
+    gap: 40px;
+    padding: 3em;
+    font-weight: 500;
+ 
+   
+    
+}
+input:focus {
+    outline: none; 
+    border: 2px solid var(--cor_botao);
+}
+label{
+    font-weight: 700;
+    color: hsl(0, 1%, 44%);
+}
+
+.entrada{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    
+    
+}
+.data{
+    width: 4em;
+    height: 1.5em;
+    border-radius: 5px;
+    font-weight: 700;
+    font-family: var(--fonte_letra);
+    text-align: center;
+    padding-top: 8px;
+    font-size: 32px;
+    
+}
+.data::placeholder {
+    font-size: 24px;
+    
+    
+}
+.botao{
+    margin-left: 38em;
+    height: 6.5em;
+    width: 6.5em;
+    border-radius: 50%;
+    background-color: var(--cor_botao);
+    border: 0;
+    
+    
+
+}
+
+.botao:hover{
+    background-color: black;
+    
+}
+img{
+    width: 70%;
+    height: 60%;
+   
+}
+.resultados{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 5em;
+    font-weight: 700;
+}
+.resultado{
+   margin: 0; 
+  
+}
+.resultado span {
+    color: var(--cor_botao);
+    font-weight: bold;
+}
+.erro{
+    color: red;
+    font-size: 12px;
+    
+}
+
+input[type=number]::-webkit-outer-spin-button,
+    input[type=number]::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;}
+       
+        @media screen and (max-width:960px ) {
+            .container{
+                width: 90%;
+                height: 70%;
+            }
+            .input{
+                padding: 2em 6em 1em 2em;
+                gap: 0;
+          
+            }
+            .data{
+                width: 70%;
+                height: 40%;
+                font-size: 22px;
+            }
+            .resultados{
+                font-size: 3em;
+            }
+            .botao{
+                margin-left: 24em;
+                height: 5em;
+                width: 5em;
+            }
+            .erro{
+                font-size: 9px;
+            }
+            
+            
+
+
+        }        
